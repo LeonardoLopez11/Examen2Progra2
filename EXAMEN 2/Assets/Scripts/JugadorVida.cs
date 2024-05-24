@@ -1,3 +1,4 @@
+using GameJolt.API;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -29,8 +30,8 @@ public class JugadorVida : MonoBehaviour
 
     void Die()
     {
-        
-        Debug.Log("Player Died");
+
+        Trophies.Unlock(233911);
         Destroy(gameObject);
     }
 }
